@@ -126,6 +126,8 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
       focusNode: focus,
       decoration: InputDecoration(
         hintText: widget.hintText,
+        style: TextStyle(color: Get.theme.colorScheme.secondary.withOpacity(0.8)),
+        hintStyle: TextStyle(color: Get.theme.colorScheme.secondary.withOpacity(0.8)),
         border: InputBorder.none,
         isDense: true,
         contentPadding: widget.contentPadding,
@@ -250,7 +252,7 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
           Expanded(
             child: Text(
               widget.searchingText ?? "Searching...",
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 16, color: Get.theme.colorScheme.secondary.withOpacity(0.8)),
             ),
           )
         ],
