@@ -124,9 +124,9 @@ class AutoCompleteSearchState extends State<AutoCompleteSearch> {
     return TextField(
       controller: controller,
       focusNode: focus,
+      style: TextStyle(color: Colors.black),
       decoration: InputDecoration(
         hintText: widget.hintText,
-        style: TextStyle(color: Colors.black),
         hintStyle: TextStyle(color: Colors.black),
         border: InputBorder.none,
         isDense: true,
